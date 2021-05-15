@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: yellow;
+}
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: yellow;
+    padding: 10px 30px;
+}
+
+header h1 {
+    color: black;
+    margin: 0;
+}
+
+.postCreationForm {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.postCreationForm > div {
+    flex: 1;
+}
+
+.formLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formLeft input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+
+.formLeft input::placeholder, .formRight textarea::placeholder {
+    color: rgba(255, 255, 0, 0.6);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.formRight textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.formRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRight > textarea {
+    flex: 1;
+    outline: none;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+
+#submit {
+    flex: 1;
+    outline: none;
+    border: 1px solid yellow;
+    background-color: yellow;
+    color: black;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.postsHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post {
+    flex: 1;
+    flex-basis: 50%;
+    margin: auto;
+    height: 400px;
+}
+
+.innerPost {
+    width: 80%;
+    margin: auto;
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    transition: 1s;
+    border: 1px solid yellow;
+}
+
+.innerPost:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.innerPost:hover .controls {
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+
+.controls {
+    opacity: 0;
+    max-height: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transition: 0.5s;
+}
+
+.controls a {
+    padding: 10px;
+    border: 1px solid black;
+    min-width: 50px;
+    text-align: center;
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.delete {
+    transition: 0.25s;
+}
+
+.delete:hover {
+    border-color: red;
+    color: red;
+}
+
+.edit {
+    transition: 0.25s;
+}
+
+.edit:hover {
+    border-color: green;
+    color: green;
+}
